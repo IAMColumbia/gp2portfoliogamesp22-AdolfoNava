@@ -1,13 +1,13 @@
 # Game Programming 2 Final
 
-## Game Name: Riftbound  
+## Game Name: Dynasty
 ### Description Short: 
-Many different creatures, machines, and humans converge to the same environment to exert their infleuence from their time period. Utilize their weapons and tools to stop their collective invasion.
+Venture outward away from your home to gather strength to defeat the threats to your home. Gather equipment and the skills to defeat your foes.
 
 ### Description Long: 
-Various species mystical and futuristic have been converged unto a specific date and now the creator of the rifts fights back using tools from the various timelines you come across to survive as much as possible. Each timeline has their own weapons and tools that can be utilized by the player. Observing the player's actions along the way.
+The game will be similar to Legend of Zelda with the aspects of simple exploration and picking up objects and money in the world to later improve your character as you explore to defeat the boss.
 
-Genre: FPS Shooter
+Genre: 2D top down adventure game
 
 Platform: PC Unity Version 2021.1.12f lts
 
