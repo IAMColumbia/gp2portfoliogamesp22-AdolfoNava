@@ -1,0 +1,12 @@
+Folders made in project relating to scripts
+Scripts/ItemSystem
+Inventory - Another scriptable object but this will one will be more flexible because it can ensure that npcs, enemies and the player can have their own inventory. Has methods in place to deal with the player getting new items and interacting with the ui.
+Item - An abstract class intend to be the base of all objects in the game
+[Name of type]Item - 
+Are various created asset menu objects that will make simple presets of scriptable objects related to the objects collected in the game that the player will be able to obtain. All of the scriptable objects will be in the subfolder labeled ScriptableObjects
+Scripts/GameObjects
+Mainly be the area will all game objects in the game will have that will be for pickup items and characters.
+Player - Main script for the player's actions and inventory
+Item Pickup - Main script for objects in the world that can be picked up by the player
+InputSystem Folder
+The game will use the New Input System and thus have the scripts and input actions in the folder left there not intended to be touched after the game really gets going.

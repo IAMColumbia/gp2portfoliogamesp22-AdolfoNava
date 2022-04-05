@@ -1,1 +1,2 @@
 Release Notes version 1 POC
+Implementation of the Simple inventory system I will use for my game that will utilize unity scriptable objects to streamline making new objects making it flexible. The main intent is to have an inventory system in place for the adventure game.
