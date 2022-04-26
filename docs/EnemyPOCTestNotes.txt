@@ -1,0 +1,12 @@
+Enemy:
+- Added an extra enum called EnemyStates to better manage the potential states of the enemies 
+- Restructured around making it a proper base class removing most unity aspects of the code and removing the monobehaviour stuff
+- Now the class serves as the starting ground for the different enemy types which will be handled the mono version of the classes
+MeleeMono:
+- Hold the methods of the enemy's actions and attempt to handle state transitions
+- Can't make the state changes for the enemy
+- Have variables that are only intended to show the current status without having to dig into the debugger
+- Made the enemy data into a scriptable object to make quick adjustments
+EnemyController:
+- Simple class which will call methods in Enemy(MeleeMono) Can't figure out how to differentiate these mono versions of the classes
+- Still can't get proper changes to the enemy state attempted a 2Dcircle trigger which didn't function as intended
