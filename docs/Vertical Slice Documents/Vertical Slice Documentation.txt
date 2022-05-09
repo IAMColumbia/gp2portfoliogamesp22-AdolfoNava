@@ -1,0 +1,15 @@
+Enemy(Mono) - Implemented a interface for the sake of the enemy controller script when the controller attempts to grab the mono script that hold the methods the enemies will utilize
+- Added a new method that will make reductions to the enemies current health while being able to be called just needing the inferface of the class.
+
+Ranged - Made into a stationary unit that will shoot out projectiles based on raycast line of sight of the target
+
+Boss - Made little difference from melee from the difficulty of developing changing attack moves that weren't done in a standard sequence
+
+-Projectile classes - Handles the projectile as it is traveling across the scene
+
+Player - Added simple stats and weapon switching implementation
+- Added methods intended for more player inputs
+
+Inventory - Implemented various changes to the inventory system that is a part of the png in the folder.
+
+Items - Implemented various changes to the Item system that is mentioned slightly more in the uml image but its really just for clarity of the advances
