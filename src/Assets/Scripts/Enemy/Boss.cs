@@ -5,22 +5,9 @@ using UnityEngine;
 public class Boss : Enemy
 {
     //public Inventory BossDrops;
-    public Boss(int health, float speed)
+    public Boss(int health, float speed, EnemyState state) : base(health, speed, state)
     {
-        this.health = health;
-        this.speed = speed;
-        this.EnemyType = EnemyType.Boss;
-        this.EnemyState = EnemyState.Patrol;
-    }
 
-    protected override void Movement()
-    {
-        base.Movement();
-    }
-    public override void Attack()
-    {
-        base.Attack();
-        playerInfo.Health--;
-        AttackCoolDown = 60;
+        this.EnemyType = EnemyType.Boss;
     }
 }

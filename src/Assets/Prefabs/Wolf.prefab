@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4992072114177351828}
   - component: {fileID: 5057253392052602230}
-  - component: {fileID: 281261416}
   - component: {fileID: 281261415}
   - component: {fileID: 281261411}
   - component: {fileID: 281261412}
+  - component: {fileID: -7115214101155493786}
   m_Layer: 0
   m_Name: Wolf
   m_TagString: Enemy
@@ -88,26 +88,6 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!50 &281261416
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3007752971516491742}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 6.5536
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
 --- !u!61 &281261415
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -169,3 +149,24 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   CurrentPatrolPoint: 0
+--- !u!50 &-7115214101155493786
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3007752971516491742}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4

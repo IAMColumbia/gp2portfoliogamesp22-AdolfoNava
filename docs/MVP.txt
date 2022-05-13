@@ -1,0 +1,5 @@
+- I had made changes to the constructor for the enemy class that will let the sub class have overloaded constructors
+- I rearraged the player references info to the mono versions of the enemy classes because its more associatied with unity than the base enemy counter part along with the damage because I didn't make a base version of player stuff because of how much info I call already.
+- I removed a reference to rigidbody 2D for the enemy classes because it 
+- Set the menu basic functionality to setup scene transitions
+- made 3 levels that will go on loop once completed. Each of these levels incorporate the different enemy types in the game.

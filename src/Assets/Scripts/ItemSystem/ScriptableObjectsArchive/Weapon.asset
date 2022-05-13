@@ -18,7 +18,7 @@ MonoBehaviour:
   Description: 
   Data:
     Name: 
-    Id: -1
+    Id: 3
     buffs: []
   WeaponType: 0
   DamageStat: 1

@@ -10,10 +10,10 @@ public class MeleeMono : EnemyMono
 
     public override void Awake()
     {
-        Melee = new Melee(enemyInfo.Health,enemyInfo.Speed);
+        Melee = new Melee(enemyInfo.Health,enemyInfo.Speed,EnemyState.Patrol);
         base.Awake();
-        Melee.Player = GameObject.FindGameObjectWithTag("Player");
-        Melee.playerInfo = Melee.Player.GetComponent<Player>();
+        Player = GameObject.FindGameObjectWithTag("Player");
+        playerInfo = Player.GetComponent<Player>();
         State = Melee.EnemyState;
 
     }
@@ -41,6 +41,7 @@ public class MeleeMono : EnemyMono
                 if (Melee.AttackCoolDown <= 0)
                 {
                     Attack();
+                    Melee.AttackCoolDown = 30;
                 }
                 break;
             case EnemyState.Retreating:
@@ -56,7 +57,7 @@ public class MeleeMono : EnemyMono
     }    
     public override void Patrol()
     {        
-        if(Vector2.Distance(gameObject.transform.position, Melee.Player.transform.position) < 10f)
+        if(Vector2.Distance(gameObject.transform.position, Player.transform.position) < 10f)
         {
             Melee.EnemyState = EnemyState.Agro;
             State = EnemyState.Agro;
@@ -75,13 +76,14 @@ public class MeleeMono : EnemyMono
     }
     public override void Agro()
     {
-       transform.position = Vector3.MoveTowards(gameObject.transform.position, Melee.Player.transform.position, SpeedData);
+       transform.position = Vector3.MoveTowards(gameObject.transform.position, Player.transform.position, SpeedData);
+        Melee.AttackCoolDown--;
     }
     public override void Attack()
     {
-        if (Vector3.Distance(this.gameObject.transform.position, Melee.Player.transform.position) < 1)
+        if (Vector3.Distance(this.gameObject.transform.position, Player.transform.position) < 2)
         {
-            Melee.Attack();
+            playerInfo.Health--;
         }
     }
     public override void Retreat()

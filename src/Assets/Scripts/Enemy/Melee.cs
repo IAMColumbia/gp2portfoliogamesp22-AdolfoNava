@@ -4,18 +4,8 @@ using UnityEngine;
 
 public class Melee : Enemy
 {
-    public Melee(int health,float speed)
+    public Melee(int health, float speed,EnemyState state) : base(health, speed,state)
     {
-        this.health = health;
-        this.speed = speed;
         this.EnemyType = EnemyType.Melee;
-        this.EnemyState = EnemyState.Patrol;
-
-    }
-    public override void Attack()
-    {
-        base.Attack();
-        playerInfo.Health--;
-        AttackCoolDown = 60;
     }
 }

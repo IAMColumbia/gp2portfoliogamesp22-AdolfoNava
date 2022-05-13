@@ -4,11 +4,8 @@ using UnityEngine;
 
 public class Ranged : Enemy
 {
-    public Ranged(int health, float speed)
+    public Ranged(int health, float speed, EnemyState state) : base(health, speed, state)
     {
-        this.health = health;
-        this.speed = speed;
         this.EnemyType = EnemyType.Ranged;
-        this.EnemyState = EnemyState.Patrol;
     }
 }

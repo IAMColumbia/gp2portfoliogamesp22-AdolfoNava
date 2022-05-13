@@ -37,6 +37,11 @@ public class Player : MonoBehaviour
     }
     void FixedUpdate()
     {
+        if (Health <= 0)
+        {
+            Alive = false;
+            this.gameObject.SetActive(false);
+        }
         if(Ranged.gameObject.activeInHierarchy && playerWeapon == PlayerWeapon.Ranged)
         RotateRangedWeapon();
         else if(Weapon.gameObject.activeInHierarchy&& playerWeapon == PlayerWeapon.Melee)
@@ -99,7 +104,7 @@ public class Player : MonoBehaviour
         Vector3 targetPos = Ranged.position;
         Vector3 ShootingDirection = ProjectileStartingPoint.position -targetPos;
         GameObject bullet = Instantiate(RangedProjectile, ProjectileStartingPoint.transform.position,Quaternion.identity);
-        bullet.GetComponent<Rigidbody2D>().AddForce(ShootingDirection * speed* 100);
+        bullet.GetComponent<Rigidbody2D>().AddForce(ShootingDirection * speed * 125);
         //Transfer stats of ranged weapon here
         AttackAction = false;
     }
@@ -149,8 +154,8 @@ public class Player : MonoBehaviour
         //inventory.Save();
         //inventory.InventoryCollection.Clear();
         //inventory.Container.InventoryItems.;
-        inventory.Container.Clear();
-        equipment.Container.Clear();
+        inventory.Clear();
+        equipment.Clear();
     }
     private void OnEnable()
     {

@@ -19,16 +19,26 @@ public class LevelChecker : MonoBehaviour
         if(TotalEnemyCount <= 0)
         {
             CurrentScene++;
-            if (CurrentScene <= SceneManager.sceneCount || !Player.Alive)
+
+            if (CurrentScene <= SceneManager.sceneCount)
             {
                 CurrentScene = 1;
             }
             Invoke("SceneSwitch", 5f);
         }
+        if (!Player.Alive)
+        {
+            Invoke("LoadMenu", 2f);
+        }
     }
     IEnumerator SceneSwitch()
     {
-         SceneManager.LoadScene(CurrentScene);
+        SceneManager.LoadScene(CurrentScene);
+        return null;
+    }
+    IEnumerator LoadMenu()
+    {
+        SceneManager.LoadScene(0);
         return null;
     }
 }

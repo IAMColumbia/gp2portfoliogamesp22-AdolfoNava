@@ -7,15 +7,14 @@ public class BossMono : EnemyMono
     public Boss Boss;
     public override void Awake()
     {
-        Boss = new Boss(enemyInfo.Health, enemyInfo.Speed);
+        Boss = new Boss(enemyInfo.Health, enemyInfo.Speed,EnemyState.Patrol);
         base.Awake();
-        Boss.Player = GameObject.FindGameObjectWithTag("Player");
-        Boss.playerInfo = Boss.Player.GetComponent<Player>();
+        Player = GameObject.FindGameObjectWithTag("Player");
+        playerInfo = Player.GetComponent<Player>();
         State = Boss.EnemyState;
     }
     private void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
         HealthData = Boss.health;
         SpeedData = Boss.speed;
     }
@@ -28,18 +27,14 @@ public class BossMono : EnemyMono
     }
     public override void Agro()
     {
-        transform.position = Vector3.MoveTowards(gameObject.transform.position, Boss.Player.transform.position, SpeedData);
-        if (Vector2.Distance(transform.position, Boss.Player.transform.position) < 2f)
-        {
-            Boss.AttackCoolDown = 30;
-        }
-    }
+        transform.position = Vector3.MoveTowards(gameObject.transform.position, Player.transform.position, SpeedData);
+        Boss.AttackCoolDown--;
 
     public override void Attack()
     {
-        if (Vector3.Distance(this.gameObject.transform.position, Boss.Player.transform.position) < 1)
+        if (Vector3.Distance(this.gameObject.transform.position, Player.transform.position) < 3.4f)
         {
-            Boss.Attack();
+            playerInfo.Health--;
         }
     }
 
@@ -59,6 +54,7 @@ public class BossMono : EnemyMono
                 if (Boss.AttackCoolDown <= 0)
                 {
                     Attack();
+                    Boss.AttackCoolDown = 30;
                 }
                 break;
             case EnemyState.Retreating:
@@ -76,7 +72,7 @@ public class BossMono : EnemyMono
     public override void Patrol()
     {
         //Only intended to start the fight after getting in range of the boss
-        if (Vector2.Distance(gameObject.transform.position, Boss.Player.transform.position) < 30f)
+        if (Vector2.Distance(gameObject.transform.position, Player.transform.position) < 30f)
         {
             Boss.EnemyState = EnemyState.Agro;
             State = EnemyState.Agro;
@@ -90,12 +86,5 @@ public class BossMono : EnemyMono
     public override void Retreat()
     {
 
-    }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if(collision.tag == "Weapon")
-        {
-            //rb.AddRelativeForce(collision.transform.localPosition, ForceMode2D.Force);
-        }
     }
 }

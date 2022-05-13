@@ -13,10 +13,10 @@ public class RangedMono : EnemyMono
     public float FireRate;
     public override void Awake()
     {
-        Ranged = new Ranged(enemyInfo.Health, enemyInfo.Speed);
+        Ranged = new Ranged(enemyInfo.Health, enemyInfo.Speed,EnemyState.Patrol);
         base.Awake();
-        Ranged.Player = GameObject.FindGameObjectWithTag("Player");
-        Ranged.playerInfo = Ranged.Player.GetComponent<Player>();
+        Player = GameObject.FindGameObjectWithTag("Player");
+        playerInfo = Player.GetComponent<Player>();
         State = Ranged.EnemyState;
 
     }    
@@ -31,7 +31,7 @@ public class RangedMono : EnemyMono
     public override void Agro()
     {
         //Vector3.RotateTowards()
-        Vector2 targetPos = Ranged.Player.transform.position;
+        Vector2 targetPos = Player.transform.position;
 
         ShootingDirection = targetPos - (Vector2)transform.position;
         RaycastHit2D rayinfo = Physics2D.Raycast(transform.position, ShootingDirection, 18f);
@@ -47,7 +47,7 @@ public class RangedMono : EnemyMono
             }
             else
             {
-                if(Vector2.Distance(Ranged.Player.transform.position, transform.position) > 23f)
+                if(Vector2.Distance(Player.transform.position, transform.position) > 23f)
                 {
                     HitPlayer = false;
                     ColorToSwitch.color = Color.white;
@@ -101,7 +101,7 @@ public class RangedMono : EnemyMono
 
     public override void Patrol()
     {
-        if (Vector2.Distance(gameObject.transform.position, Ranged.Player.transform.position) < 10f)
+        if (Vector2.Distance(gameObject.transform.position, Player.transform.position) < 10f)
         {
             Ranged.EnemyState = EnemyState.Agro;
             State = EnemyState.Agro;

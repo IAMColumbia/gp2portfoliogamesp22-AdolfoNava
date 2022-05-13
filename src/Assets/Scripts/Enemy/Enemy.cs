@@ -6,8 +6,6 @@ public enum EnemyType { Melee,Ranged,Boss,Dead}
 public enum EnemyState { Patrol, Agro, Retreating,Dead }
 public abstract class Enemy
 {
-    public GameObject Player;
-    public Player playerInfo;
 
     public int health;
 
@@ -19,6 +17,12 @@ public abstract class Enemy
     public EnemyType EnemyType;
 
     protected EnemyState enemystate;
+    public Enemy(int health, float speed,EnemyState state)
+    {
+        this.health = health;
+        this.speed = speed;
+        EnemyState = EnemyState.Patrol;
+    }
 public EnemyState EnemyState 
     { 
         get { return enemystate; }

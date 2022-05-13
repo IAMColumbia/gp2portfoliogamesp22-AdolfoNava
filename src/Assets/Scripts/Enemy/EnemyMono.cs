@@ -13,12 +13,13 @@ public interface IEnemyMono
 }
 public abstract class EnemyMono : MonoBehaviour, IEnemyMono
 {
+    public GameObject Player;
+    public Player playerInfo;
     public GameObject Drop;
     public EnemyInfo enemyInfo;
     public int HealthData;
     public float SpeedData;
     public EnemyState State;
-    protected Rigidbody2D rb;
     protected SpriteRenderer SpriteHandler;
 
     public virtual void Awake()

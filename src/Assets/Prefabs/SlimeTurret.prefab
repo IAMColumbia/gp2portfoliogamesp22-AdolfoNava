@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 1640664281631963891}
   - component: {fileID: 1640664281631963884}
   - component: {fileID: 1640664281631963885}
-  - component: {fileID: 1640664281631963888}
+
   - component: {fileID: 1640664281631963889}
   m_Layer: 2
   m_Name: SlimeTurret
