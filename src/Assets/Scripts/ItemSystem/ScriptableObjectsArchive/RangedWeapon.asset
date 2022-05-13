@@ -20,5 +20,5 @@ MonoBehaviour:
     Name: 
     Id: 2
     buffs: []
-  WeaponType: 0
+  WeaponType: 1
   DamageStat: 1
