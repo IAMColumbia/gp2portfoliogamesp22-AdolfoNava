@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Comment CommentText="Misc">
+    <Position X="33.419" Y="2.037" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="Unused">
+    <Position X="36.448" Y="2.244" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="Enemy Unity Dependent">
+    <Position X="24.108" Y="6.721" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="This is for the player interaction of the inventory both obtaining and manipulating locations">
+    <Position X="2.485" Y="10.752" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="Derived from the new input system">
+    <Position X="35.92" Y="7.299" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="Enemy Non unity dependent">
+    <Position X="28.99" Y="1.7" Height="0.763" Width="1.87" />
+  </Comment>
+  <Comment CommentText="individual item system">
+    <Position X="10.147" Y="7.841" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="UI aspect of the inventory system">
+    <Position X="3.326" Y="1.137" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="Indiviual Item System">
+    <Position X="13.53" Y="2.509" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="Player">
+    <Position X="18.75" Y="0.5" Height="0.75" Width="1.7" />
+  </Comment>
+  <Class Name="MeleeWeapon">
+    <Position X="19" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\MeleeWeapon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerProjectile">
+    <Position X="19" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAgAAAAAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\PlayerProjectile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UIHandler">
+    <Position X="34.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAgAAAAAAAAAAAAAAAAAAAAARAAAAAAAAEAA=</HashCode>
+      <FileName>Assets\Scripts\UIHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Walls">
+    <Position X="36.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Walls.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LevelChecker">
+    <Position X="32.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAACAABAAAAAAIIAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\LevelChecker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DefaultItem">
+    <Position X="7.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\ItemSystem\DefaultItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DynamicInterface">
+    <Position X="0.75" Y="7.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAEEBEAACAAAAgAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ItemSystem\DynamicInterface.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EquipmentItem">
+    <Position X="11" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\ItemSystem\EquipmentItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Item">
+    <Position X="10.5" Y="2.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAgAAAgAAAAAAAAAAAAABAAAQAAACAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ItemSystem\Item.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ItemContent">
+    <Position X="13" Y="8.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAADAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ItemSystem\Item.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ItemBuff">
+    <Position X="15" Y="10.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ItemSystem\Item.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Inventory">
+    <Position X="5.5" Y="9" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAAAgIRAAEAAAAYAAAAAAAAAgAAAAAAEAABEAABACAA=</HashCode>
+      <FileName>Assets\Scripts\ItemSystem\Inventory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InventorySet">
+    <Position X="9.75" Y="8.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Assets\Scripts\ItemSystem\Inventory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InventorySlot">
+    <Position X="9.75" Y="10.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABEAAAABACEAAAAAJAEAAACAAAAAAQ=</HashCode>
+      <FileName>Assets\Scripts\ItemSystem\Inventory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KeyItem">
+    <Position X="9.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACEA=</HashCode>
+      <FileName>Assets\Scripts\ItemSystem\KeyItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StaticInterface">
+    <Position X="3.25" Y="7.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAARAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ItemSystem\StaticInterface.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RecoveryItem">
+    <Position X="14.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\ItemSystem\RecoveryItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UI">
+    <Position X="0.5" Y="2.75" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAADAAAAoiAAAABBAABAAAAAAAgQAAACAIABAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ItemSystem\UI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MouseData">
+    <Position X="4" Y="5.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAAAABAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ItemSystem\UI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeaponItem">
+    <Position X="12.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\ItemSystem\WeaponItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="@MainControl" BaseTypeListCollapsed="true">
+    <Position X="33.75" Y="8.5" Width="3.5" />
+    <NestedTypes>
+      <Struct Name="@MainControl.GameplayActions" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\InputSystem\MainControl.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Interface Name="@MainControl.IGameplayActions" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\InputSystem\MainControl.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Interface>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAQCAGMAAFAAAAABCJAAACAgAGBEAAAggAAQAAA=</HashCode>
+      <FileName>Assets\InputSystem\MainControl.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PlayerInputHandler">
+    <Position X="37.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQACAAAAAABAAAAAAAAIAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\InputSystem\PlayerInputHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Boss">
+    <Position X="25" Y="4.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Enemy\Boss.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BossMono">
+    <Position X="26.25" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAiAABAAARAAAAAAAIIAAAAAAAAAAQAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\Enemy\BossMono.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Enemy">
+    <Position X="24.75" Y="0.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAQAABAhABAAAQAAAAIAAAQAAAAAAQCAAAAg=</HashCode>
+      <FileName>Assets\Scripts\Enemy\Enemy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnemyController">
+    <Position X="23.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAiAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Assets\Scripts\Enemy\EnemyController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnemyInfo">
+    <Position X="26.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Enemy\EnemyInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnemyMono">
+    <Position X="25.25" Y="8.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAQBAAABAAAAAAIIIIAABAgAAAARQAACEA=</HashCode>
+      <FileName>Assets\Scripts\Enemy\EnemyMono.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Melee">
+    <Position X="21.25" Y="4.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Enemy\Melee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnemyProjectile">
+    <Position X="23.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Enemy\EnemyProjectile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MeleeMono">
+    <Position X="28.5" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIACAABAAABAIAQAAAIIBAAAAAAAAAQAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\Enemy\MeleeMono.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ranged">
+    <Position X="28.5" Y="4.75" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Enemy\Ranged.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RangedMono">
+    <Position X="24" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIACABDAACBAAAAAAIIIAAAAAACAAAQAAAIEA=</HashCode>
+      <FileName>Assets\Scripts\Enemy\RangedMono.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ItemPickup" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="12" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAQAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\GameObjects\ItemPickup.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Player">
+    <Position X="18" Y="6" Width="3" />
+    <TypeIdentifier>
+      <HashCode>BBJACRIICiAICAAEBACgAAAAAMAEARwKBAAAAAAACGA=</HashCode>
+      <FileName>Assets\Scripts\GameObjects\Player.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ItemDatabaseObject" BaseTypeListCollapsed="true">
+    <Position X="4.25" Y="2.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAgAAAAAAABAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ItemSystem\Database\ItemDatabaseObject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="IEnemyMono">
+    <Position X="28" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAABAAABAAAAAAAIIAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Enemy\EnemyMono.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="WallStatus">
+    <Position X="36.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYA=</HashCode>
+      <FileName>Assets\Scripts\Walls.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ItemType">
+    <Position X="8.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAIAQAAAQAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ItemSystem\Item.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Attributes">
+    <Position X="15.25" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ItemSystem\Item.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="WeaponType">
+    <Position X="8.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ItemSystem\WeaponItem.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EnemyType">
+    <Position X="22.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAQAAAAAAAAABAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Enemy\Enemy.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EnemyState">
+    <Position X="22.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAJAAAAAAAAAAASAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Enemy\Enemy.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="PlayerWeapon">
+    <Position X="18.75" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\GameObjects\Player.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
