@@ -19,6 +19,7 @@ public class LevelChecker : MonoBehaviour
         if(TotalEnemyCount <= 0)
         {
             CurrentScene++;
+
             if (CurrentScene <= SceneManager.sceneCount)
             {
                 CurrentScene = 1;

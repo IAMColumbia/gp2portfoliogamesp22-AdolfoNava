@@ -31,7 +31,6 @@ public class BossMono : EnemyMono
     {
         transform.position = Vector3.MoveTowards(gameObject.transform.position, Player.transform.position, SpeedData);
         Boss.AttackCoolDown--;
-    }
 
     public override void Attack()
     {
