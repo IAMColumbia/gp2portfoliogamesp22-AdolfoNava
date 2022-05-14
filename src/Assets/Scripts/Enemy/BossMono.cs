@@ -22,8 +22,6 @@ public class BossMono : EnemyMono
     {
         if (HealthData <= 0)
         {
-            EnemyAudioManager.PlayDeathAudio(Boss.EnemyType.ToString());
-            State = EnemyState.Dead;
             Destroy(gameObject);
         }
     }
