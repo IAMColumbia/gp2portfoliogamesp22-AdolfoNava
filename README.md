@@ -5,6 +5,7 @@
 Get stuck in a serious of levels that involve killing creatures that are looking for food never knowing if you can escape.
 
 ### Description Long: 
+Battle against 3 enemy types with a sword and a rifle and collect items to put in your inventory you will go into a loop of levels trying to deal with each encounter with what you have with you
 
 ### Credits: 
 Unity Packages used in the project outside of the base stuff: Cinemachine 2.7.9, TextNMeshPro 3.0.6, Input System 1.0.2
