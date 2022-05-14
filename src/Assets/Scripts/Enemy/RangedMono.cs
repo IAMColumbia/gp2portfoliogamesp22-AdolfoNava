@@ -77,7 +77,8 @@ public class RangedMono : EnemyMono
     {
         if (HealthData <= 0||Ranged.health<=0)
         {
-            State=Ranged.EnemyState = EnemyState.Dead;
+            EnemyAudioManager.PlayDeathAudio(Ranged.EnemyType.ToString());
+            State =Ranged.EnemyState = EnemyState.Dead;
         }
         switch (Ranged.EnemyState)
         {
