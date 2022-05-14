@@ -1,0 +1,1 @@
+So In my project that I'm bringing into the repo I labeled clearly what each scene is intended to be with Level 1 has the basic implementation of the game flow with quick transitions into the next scene that would offer different room encounter options and simple text flow.
