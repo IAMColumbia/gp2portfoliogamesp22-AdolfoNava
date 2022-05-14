@@ -1,0 +1,30 @@
+This will cover everything that I didn't mention in the other sections of this project I overlooked how much I didn't go in detail in some of the MVP changes to some of the changes I made
+
+THERE IS A UML DIAGRAM BUT ITS IN THE SCRIPTS FOLDER THAT OPENS IN VS all classes in the uml are sectioned by what the classes' purpose were
+
+New class "EnemyAudioManager" this will get the audio files for the death sounds of the enemies that the player kills
+
+Inventory system:
+
+Item classes:
+There was a lot of various revisions to this setup due to thinking about how to transfer inportant info about the gear the player picks up like weapon and also change the look of the weapon to reflect what was in the slot in the static interface sadly that requires more time thinking and implementing it than what I have time for.
+Item - Starting info of any item made in the game that was intended to be picked up by the player
+
+ItemContent - This was for database asset that will help keep a reference of a potential item's info when its needed for saving progress or item position in the inventory storage
+
+ItemBuff - not used in the final game for the sake 
+
+InventorySlot - This was for the visualizion of the individual item info and what gets displayed to the user in the game scenes
+
+InventorySet - Collection of Inventory Slots with the function to clear item info in the array elements in the editor window
+
+
+
+Inventory UI:
+I really wanted to have this system have little communication to the items that its storing as possible I think it really is the bare minimum which leaves the opportunity to just take the interactions in these classes and move them to another project that would involve the dreaded ui.
+
+UI base class - Intended to be the foundation for the types of inventorys in the game static intended for something like armor pieces or weapons. There are also methods in here that will get called by the subclasses for the sake of remember what item a player might be dragging around in the scene.
+
+Static Interface - The static is meaning the placement of the items in the user interface being static in nature (those squares that will hold the item data).
+
+Dynamic Interface - The dynamic here is for the arrangement of the collection of objects instantly picked up by the player and left to the player where they wish to change around the placement of the item if they so chosen. The variables are for adjusting the instaniation of the inventoryprefabs around in a neat order

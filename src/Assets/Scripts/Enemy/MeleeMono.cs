@@ -29,7 +29,8 @@ public class MeleeMono : EnemyMono
     {
         if (Melee.health <= 0)
         {
-            State=Melee.EnemyState = EnemyState.Dead;
+            EnemyAudioManager.PlayDeathAudio(Melee.EnemyType.ToString());
+            State =Melee.EnemyState = EnemyState.Dead;
         }   
         switch (Melee.EnemyState)
         {

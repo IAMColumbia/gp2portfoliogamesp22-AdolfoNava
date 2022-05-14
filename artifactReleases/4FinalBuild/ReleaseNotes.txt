@@ -1,1 +1,12 @@
 Release Notes version 3 Final
+Game setup:
+UI works on 1920x1080 resolution
+There is a main menu that starts the game or closes the app
+there are three levels that transitions in order and that will repeat once all enemies are dead after a few seconds inventory carries over after you die until you exit the game
+Controls: 
+WASD character movement
+I toggle inventory visibility 
+Q switch weapons
+Mouse Aim Player weapons
+left click attack action
+Have fun
